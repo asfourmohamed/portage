@@ -1,0 +1,9 @@
+download hiredis
+install hiredis http://yular.github.io/2017/01/28/C-Redis-QuickStart/ ou redis_tutorial.html
+repalce files in directory gw/
+edit bb_smscconn.c to fit redis noSQL connexion parameter
+after ./configure edit Makefike search -lpth add in the end of line -lhiredis
+make 
+make install
+in configuration file for bearerbox insert in smsc-id = IAM the other ORG and the last INW
+ 
